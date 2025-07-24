@@ -1,0 +1,181 @@
+import React from 'react';
+
+// Lucide React icons (assuming they are available in the environment)
+// If not, you can replace these with inline SVGs or Font Awesome
+const Rocket = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-rocket"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.75-.75 1.39-1.72 1.87-2.78m.02-2.46c-.62.26-1.29.48-2 2.5l-.5 1c2.2-2.2 2.85-7.5 3-10-.26-.44-.52-.89-.79-1.34L12 2l-3 3c-1.35 1.35-2.22 2.67-2.78 3.5M14 8c0 6-4 10-10 10m9.95-9.95a4 4 0 1 0-7.09 7.09M10 10l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M15 15l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M19 19l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M23 23l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94"/></svg>
+);
+const Award = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-award"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17.18 21l-5.15-3.62L6.82 21l1.703-8.11"/></svg>
+);
+const Mail = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+);
+const Twitter = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17-19 11.6 9.2-.7 17.5-6.8 19-11.6z"/></svg>
+);
+const Instagram = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+);
+
+function App() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 font-inter text-gray-800">
+      {/* Header */}
+      <header className="bg-white shadow-md py-4 px-6 md:px-12 rounded-b-xl">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+          <h1 className="text-3xl font-extrabold text-blue-700 mb-2 md:mb-0">
+            MYP Portfolio
+          </h1>
+          <nav className="space-x-4">
+            <a href="#about" className="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">About</a>
+            <a href="#initiatives" className="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Initiatives</a>
+            <a href="#achievements" className="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Achievements</a>
+            <a href="#contact" className="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero/Introduction Section */}
+      <section id="about" className="container mx-auto py-16 px-6 md:px-12 text-center">
+        <div className="bg-white p-8 rounded-2xl shadow-lg max-w-3xl mx-auto">
+          {/* Placeholder for your profile image */}
+          {/* Replace 'https://placehold.co/150x150/aabbcc/ffffff?text=Your+Photo' with the URL of your cropped image */}
+          <img
+            src="https://placehold.co/150x150/aabbcc/ffffff?text=Your+Photo"
+            alt="Your Profile"
+            className="w-40 h-40 rounded-full mx-auto mb-6 object-cover shadow-md"
+            onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/150x150/cccccc/333333?text=Image+Error"; }}
+          />
+          <h2 className="text-5xl font-bold text-blue-800 mb-4 leading-tight">
+            Hello! I'm Your Member of Youth Parliament.
+          </h2>
+          <p className="text-xl text-gray-700 mb-6">
+            Dedicated to empowering young voices and driving positive change for our community and the UK.
+          </p>
+          <p className="text-lg text-gray-600">
+            I believe in a future where every young person is heard, valued, and equipped to shape our democratic landscape. Join me on this journey!
+          </p>
+        </div>
+      </section>
+
+      {/* Key Initiatives Section */}
+      <section id="initiatives" className="container mx-auto py-16 px-6 md:px-12">
+        <h2 className="text-4xl font-bold text-center text-blue-800 mb-12">
+          My Key Initiatives
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Initiative 1: Votes at 16 */}
+          <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
+            <div className="p-4 bg-blue-100 rounded-full mb-4">
+              <Rocket className="text-blue-600 w-8 h-8" />
+            </div>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+              Votes at 16
+            </h3>
+            <p className="text-gray-700">
+              A monumental achievement! After years of relentless campaigning by @UKYP and countless youth advocates, "Votes for 16" is finally a reality across the entire UK. This is a testament to the power of our collective voice on the big democratic stage.
+            </p>
+          </div>
+
+          {/* Initiative 2: Comprehensive Political Education */}
+          <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
+            <div className="p-4 bg-green-100 rounded-full mb-4">
+              <Award className="text-green-600 w-8 h-8" />
+            </div>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+              Comprehensive Political Education
+            </h3>
+            <p className="text-gray-700">
+              Now that "Votes at 16" is secured, our next big push is for comprehensive political education in secondary schools. It's essential that 16 and 17-year-olds are equipped with the right tools, knowledge, and critical thinking skills to truly engage with our political landscape.
+            </p>
+          </div>
+
+          {/* Initiative 3: Local Youth Engagement */}
+          <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
+            <div className="p-4 bg-purple-100 rounded-full mb-4">
+              <Rocket className="text-purple-600 w-8 h-8" /> {/* Reusing Rocket for example */}
+            </div>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+              Local Youth Engagement
+            </h3>
+            <p className="text-gray-700">
+              Working to create more opportunities for young people in our local area to participate in decision-making processes, ensuring their voices are heard on issues that directly affect them.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section id="achievements" className="container mx-auto py-16 px-6 md:px-12">
+        <h2 className="text-4xl font-bold text-center text-blue-800 mb-12">
+          My Achievements
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white p-6 rounded-2xl shadow-lg flex items-start space-x-4 transform hover:scale-105 transition duration-300">
+            <Award className="text-yellow-500 w-10 h-10 flex-shrink-0" />
+            <div>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                Successful Campaign for Votes at 16
+              </h3>
+              <p className="text-gray-700">
+                Actively campaigned and contributed to the nationwide effort that led to the successful implementation of "Votes at 16" across the UK.
+              </p>
+            </div>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-lg flex items-start space-x-4 transform hover:scale-105 transition duration-300">
+            <Award className="text-yellow-500 w-10 h-10 flex-shrink-0" />
+            <div>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                Advocacy for Political Education
+              </h3>
+              <p className="text-gray-700">
+                Successfully brought the importance of political education to the forefront of discussions within the UK Youth Parliament and local councils.
+              </p>
+            </div>
+          </div>
+          {/* Add more achievements here */}
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="container mx-auto py-16 px-6 md:px-12 text-center">
+        <div className="bg-white p-8 rounded-2xl shadow-lg max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-blue-800 mb-6">
+            Get in Touch!
+          </h2>
+          <p className="text-lg text-gray-700 mb-8">
+            I'd love to hear from you. Whether you have questions, ideas, or just want to chat about youth issues, feel free to reach out.
+          </p>
+          <div className="flex justify-center space-x-6">
+            <a href="mailto:your.email@example.com" className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition duration-300">
+              <Mail className="w-8 h-8" />
+              <span className="text-xl font-medium">Email Me</span>
+            </a>
+            <a href="https://twitter.com/yourtwitterhandle" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition duration-300">
+              <Twitter className="w-8 h-8" />
+              <span className="text-xl font-medium">Twitter</span>
+            </a>
+            <a href="https://instagram.com/yourinstagramhandle" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition duration-300">
+              <Instagram className="w-8 h-8" />
+              <span className="text-xl font-medium">Instagram</span>
+            </a>
+          </div>
+          <p className="text-sm text-gray-500 mt-8">
+            Don't forget to follow @UKYP for more updates on youth democracy!
+          </p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-blue-800 text-white py-6 px-6 md:px-12 mt-16 rounded-t-xl">
+        <div className="container mx-auto text-center">
+          {/* Removed copyright line */}
+          <p className="text-sm mt-2">Empowering youth, shaping the future.</p>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
