@@ -1,44 +1,30 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYP Portfolio</title>
+    <title>MYP Portfolio - Nathan Ajith</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom font for better aesthetics */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-        }
-        /* Style for the collapsible section */
-        .collapsible-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-        .collapsible-content.expanded {
-            max-height: 1000px; /* Adjust this value as needed based on content height */
-            transition: max-height 0.5s ease-in;
         }
     </style>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800">
 
-    <header class="bg-white shadow-md py-4 px-6 md:px-12 rounded-b-xl">
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 rounded-b-xl sticky top-0 z-50">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <h1 class="text-3xl font-extrabold text-blue-700 mb-2 md:mb-0">
                 MYP Portfolio
             </h1>
             <nav class="space-x-4">
                 <a href="#about" class="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">About</a>
-                <a href="#initiatives" class="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Initiatives</a>
+                <a href="#manifesto" class="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Manifesto</a>
+                <a href="#my_roles" class="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Roles</a>
                 <a href="#achievements" class="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Achievements</a>
-                <a href="#feedback" class="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Feedback</a>
                 <a href="#contact" class="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Contact</a>
-                <a href="#instagram-showcase" class="text-lg font-medium text-gray-600 hover:text-blue-700 transition duration-300">Instagram</a>
             </nav>
         </div>
     </header>
@@ -47,92 +33,112 @@
         <div class="bg-white p-8 rounded-2xl shadow-lg max-w-3xl mx-auto">
             <img
                 src="https://raw.githubusercontent.com/NathanajithMYP/Campaign/refs/heads/main/MYP_MAIN_PIC%20(3).jpg"
-                alt="Your Profile"
+                alt="Nathan Ajith MYP"
                 class="w-40 h-40 rounded-full mx-auto mb-6 object-cover shadow-md"
                 onerror="this.onerror=null; this.src='https://placehold.co/150x150/cccccc/333333?text=Image+Error';"
             />
             <h2 class="text-5xl font-bold text-blue-800 mb-4 leading-tight">
                 Hello! I'm Your Member of Youth Parliament.
             </h2>
-            <p class="text-xl text-gray-700 mb-6">
-                Dedicated to empowering young voices and driving positive change for our community and the UK.
+            <p class="text-xl text-gray-700 mb-6 font-semibold text-indigo-600">
+                Official Member of Youth Parliament for Sunderland
             </p>
-            <p class="text-lg text-gray-600">
-                I believe in a future where every young person is heard, valued, and equipped to shape our democratic landscape. Join me on this journey!
+            <p class="text-lg text-gray-600 mb-4">
+                Dedicated to empowering young voices and driving positive change across Sunderland and the wider UK. Following our successful campaign trail, I am fully committed to delivering on every pillar of my manifesto.
+            </p>
+            <p class="text-md text-gray-500 italic">
+                "I believe in a future where every young person is heard, valued, and equipped to shape our democratic landscape."
             </p>
         </div>
     </section>
 
-    <section id="initiatives" class="container mx-auto py-16 px-6 md:px-12">
-        <h2 class="text-4xl font-bold text-center text-blue-800 mb-12">
-            My Key Initiatives
+    <section id="manifesto" class="container mx-auto py-16 px-6 md:px-12">
+        <h2 class="text-4xl font-bold text-center text-blue-800 mb-4">
+            My Manifesto & Pillars
         </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-xl mx-auto">
+            Click on any manifesto pillar below to read the comprehensive strategy, action plans, and progress milestones for each initiative.
+        </p>
+        
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
-                <div class="p-4 bg-blue-100 rounded-full mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket text-blue-600 w-8 h-8"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.75-.75 1.39-1.72 1.87-2.78m.02-2.46c-.62.26-1.29.48-2 2.5l-.5 1c2.2-2.2 2.85-7.5 3-10-.26-.44-.52-.89-.79-1.34L12 2l-3 3c-1.35 1.35-2.22 2.67-2.78 3.5M14 8c0 6-4 10-10 10m9.95-9.95a4 4 0 1 0-7.09 7.09M10 10l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M15 15l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M19 19l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M23 23l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94"/></svg>
+            <!-- Pillar 1 Link Block -->
+            <a href="manifesto/votes-at-16.html" class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transform hover:scale-105 hover:shadow-2xl border-2 border-transparent hover:border-blue-400 transition duration-300 group">
+                <div class="p-4 bg-blue-100 rounded-full mb-4 group-hover:bg-blue-200 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket text-blue-600 w-8 h-8"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.75-.75 1.39-1.72 1.87-2.78m.02-2.46c-.62.26-1.29.48-2 2.5l-.5 1c2.2-2.2 2.85-7.5 3-10-.26-.44-.52-.89-.79-1.34L12 2l-3 3c-1.35 1.35-2.22 2.67-2.78 3.5M14 8c0 6-4 10-10 10"/></svg>
                 </div>
-                <h3 class="text-2xl font-semibold text-gray-900 mb-3">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-3 group-hover:text-blue-700 transition duration-300">
                     Votes at 16
                 </h3>
-                <p class="text-gray-700">
-                    A monumental achievement! After years of relentless campaigning by @UKYP and countless youth advocates, "Votes for 16" is finally a reality across the entire UK. This is a testament to the power of our collective voice on the big democratic stage.
+                <p class="text-gray-700 flex-grow">
+                    A monumental achievement across the UK! Explore my implementation roadmap, engagement tracking, and local youth turnout frameworks here.
                 </p>
-            </div>
+                <span class="text-blue-600 font-medium mt-4 inline-flex items-center group-hover:translate-x-1 transition-transform duration-300">
+                    Read Plan &rarr;
+                </span>
+            </a>
 
-            <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
-                <div class="p-4 bg-green-100 rounded-full mb-4">
+            <!-- Pillar 2 Link Block -->
+            <a href="manifesto/political-education.html" class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transform hover:scale-105 hover:shadow-2xl border-2 border-transparent hover:border-blue-400 transition duration-300 group">
+                <div class="p-4 bg-green-100 rounded-full mb-4 group-hover:bg-green-200 transition duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award text-green-600 w-8 h-8"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17.18 21l-5.15-3.62L6.82 21l1.703-8.11"/></svg>
                 </div>
-                <h3 class="text-2xl font-semibold text-gray-900 mb-3">
-                    Comprehensive Political Education
+                <h3 class="text-2xl font-semibold text-gray-900 mb-3 group-hover:text-green-700 transition duration-300">
+                    Political Education
                 </h3>
-                <p class="text-gray-700">
-                    Now that "Votes at 16" is secured, our next big push is for comprehensive political education in secondary schools. It's essential that 16 and 17-year-olds are equipped with the right tools, knowledge, and critical thinking skills to truly engage with our political landscape.
+                <p class="text-gray-700 flex-grow">
+                    Our major push for political education in secondary schools. Click to view proposed school curriculums, debate club toolkits, and civic lesson plans.
                 </p>
-            </div>
+                <span class="text-green-600 font-medium mt-4 inline-flex items-center group-hover:translate-x-1 transition-transform duration-300">
+                    Read Plan &rarr;
+                </span>
+            </a>
 
-            <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
-                <div class="p-4 bg-purple-100 rounded-full mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket text-purple-600 w-8 h-8"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.75-.75 1.39-1.72 1.87-2.78m.02-2.46c-.62.26-1.29.48-2 2.5l-.5 1c2.2-2.2 2.85-7.5 3-10-.26-.44-.52-.89-.79-1.34L12 2l-3 3c-1.35 1.35-2.22 2.67-2.78 3.5M14 8c0 6-4 10-10 10m9.95-9.95a4 4 0 1 0-7.09 7.09M10 10l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M15 15l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M19 19l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M23 23l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94"/></svg>
+            <!-- Pillar 3 Link Block -->
+            <a href="manifesto/youth-engagement.html" class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transform hover:scale-105 hover:shadow-2xl border-2 border-transparent hover:border-blue-400 transition duration-300 group">
+                <div class="p-4 bg-purple-100 rounded-full mb-4 group-hover:bg-purple-200 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket text-purple-600 w-8 h-8"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.75-.75 1.39-1.72 1.87-2.78m.02-2.46c-.62.26-1.29.48-2 2.5"/></svg>
                 </div>
-                <h3 class="text-2xl font-semibold text-gray-900 mb-3">
-                    Local Youth Engagement
+                <h3 class="text-2xl font-semibold text-gray-900 mb-3 group-hover:text-purple-700 transition duration-300">
+                    Local Engagement
                 </h3>
-                <p class="text-gray-700">
-                    Working to create more opportunities for young people in our local area to participate in decision-making processes, ensuring their voices are heard on issues that directly affect them.
+                <p class="text-gray-700 flex-grow">
+                    Creating direct structural conduits for young people to influence local authority planning. View local clinic hubs and forum feedback timelines.
                 </p>
-            </div>
+                <span class="text-purple-600 font-medium mt-4 inline-flex items-center group-hover:translate-x-1 transition-transform duration-300">
+                    Read Plan &rarr;
+                </span>
+            </a>
         </div>
     </section>
-        <section id="my_roles" class="container mx-auto py-16 px-6 md:px-12">
+
+    <section id="my_roles" class="container mx-auto py-16 px-6 md:px-12">
         <h2 class="text-4xl font-bold text-center text-blue-800 mb-12">
-            My Key Roles
+            My Key Legislative Roles
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
                 <div class="p-4 bg-blue-100 rounded-full mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket text-blue-600 w-8 h-8"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.75-.75 1.39-1.72 1.87-2.78m.02-2.46c-.62.26-1.29.48-2 2.5l-.5 1c2.2-2.2 2.85-7.5 3-10-.26-.44-.52-.89-.79-1.34L12 2l-3 3c-1.35 1.35-2.22 2.67-2.78 3.5M14 8c0 6-4 10-10 10m9.95-9.95a4 4 0 1 0-7.09 7.09M10 10l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M15 15l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M19 19l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M23 23l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket text-blue-600 w-8 h-8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 </div>
                 <h3 class="text-2xl font-semibold text-gray-900 mb-3">
                     Sunderland Youth Council Chairman
                 </h3>
                 <p class="text-gray-700">
-                   I have been an active member of SYC for 4 years now, and at the start of this term, I was promoted from the assistant chair to the chair of SYC.
+                   Active serving member of SYC for 4 years. Unanimously chosen to transition from Vice Chair to Executive Council Chair to manage all municipal policy panels.
                 </p>
             </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
-                <div class="p-4 bg-blue-100 rounded-full mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket text-blue-600 w-8 h-8"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.75-.75 1.39-1.72 1.87-2.78m.02-2.46c-.62.26-1.29.48-2 2.5l-.5 1c2.2-2.2 2.85-7.5 3-10-.26-.44-.52-.89-.79-1.34L12 2l-3 3c-1.35 1.35-2.22 2.67-2.78 3.5M14 8c0 6-4 10-10 10m9.95-9.95a4 4 0 1 0-7.09 7.09M10 10l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M15 15l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M19 19l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94M23 23l.94.94m-2.5-2.5l.94.94m-3.5-3.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94m-2.5-2.5l.94.94"/></svg>
+                <div class="p-4 bg-indigo-100 rounded-full mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award text-indigo-600 w-8 h-8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                 </div>
                 <h3 class="text-2xl font-semibold text-gray-900 mb-3">
                     MYP for Sunderland
                 </h3>
                 <p class="text-gray-700">
-                   I was elected MYP in July 2025 and attended the uk youth parliament sitting on the 6/11/25.
+                   Elected to the UK Youth Parliament. Formally addressed the floor during the national House of Commons session to push critical local policy changes.
                 </p>
             </div>
+        </div>
     </section>
 
     <section id="achievements" class="container mx-auto py-16 px-6 md:px-12">
@@ -144,10 +150,10 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award text-yellow-500 w-10 h-10 flex-shrink-0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17.18 21l-5.15-3.62L6.82 21l1.703-8.11"/></svg>
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-900 mb-2">
-                        Playing a major role in Sunderland Youth Council's campaign for Culture, Media and Sports
+                        Culture, Media & Sports Initiative
                     </h3>
                     <p class="text-gray-700">
-                        Actively campaigned and contributed to the citywide effort that led to the successful implementation of "The You are Here trail" across Sunderland <a href="https://thesixtwenty.com/you-are-here-sunderland/">For more info visit ->HERE<-"</a>
+                        Spearheaded structural local components for the city-wide "You Are Here Trail" launch across Sunderland. <a href="https://thesixtwenty.com/you-are-here-sunderland/" target="_blank" class="text-blue-600 underline hover:text-blue-800">Learn more here &rarr;</a>
                     </p>
                 </div>
             </div>
@@ -155,16 +161,15 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award text-yellow-500 w-10 h-10 flex-shrink-0"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17.18 21l-5.15-3.62L6.82 21l1.703-8.11"/></svg>
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-900 mb-2">
-                        Hosted the citywide Health Summit at City Hall
+                        City-Wide Health Summit Delivery
                     </h3>
                     <p class="text-gray-700">
-                        Successfully brought the importance of Health education to the forefront of discussions within the local secondary schools and including health providers.
+                        Organized and presented at the formal civic Health Summit inside City Hall, driving integration between care providers and school assemblies.
                     </p>
                 </div>
             </div>
-            </div>
+        </div>
     </section>
-
 
     <section id="contact" class="container mx-auto py-16 px-6 md:px-12 text-center">
         <div class="bg-white p-8 rounded-2xl shadow-lg max-w-2xl mx-auto">
@@ -172,9 +177,9 @@
                 Get in Touch!
             </h2>
             <p class="text-lg text-gray-700 mb-8">
-                I'd love to hear from you. Whether you have questions, ideas, or just want to chat about youth issues, feel free to reach out.
+                Whether you have policy questions, community development ideas, or want to raise issues to the Youth Parliament level, use the links below to connect.
             </p>
-            <div class="flex justify-center space-x-6">
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
                 <a href="mailto:nathan.ajith.myp@gmail.com" class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-8 h-8"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                     <span class="text-xl font-medium">Email Me</span>
@@ -184,87 +189,23 @@
                     <span class="text-xl font-medium">Twitter</span>
                 </a>
                 <a href="https://instagram.com/nathanajith_myp" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-8 h-8"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-8 h-8"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
                     <span class="text-xl font-medium">Instagram</span>
                 </a>
             </div>
             <p class="text-sm text-gray-500 mt-8">
-                Don't forget to follow @UKYP for more updates on youth democracy!
+                Follow @UKYP for ongoing national legislation updates.
             </p>
         </div>
     </section>
 
-    ---
-
-    <section id="instagram-showcase" class="container mx-auto py-16 px-6 md:px-12 text-center">
-        <h2 class="text-4xl font-bold text-center text-blue-800 mb-6">
-            My Instagram Activity
-        </h2>
-        <button id="toggleInstagram" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 mb-8">
-            Show Latest Post
-        </button>
-        <div id="instagramContent" class="collapsible-content flex justify-center">
-            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DMbEGDVIDih/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                <div style="padding:16px;">
-                    <a href="https://www.instagram.com/p/DMbEGDVIDih/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
-                        <div style=" display: flex; flex-direction: row; align-items: center;">
-                            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-                            </div>
-                        </div>
-                        <div style="padding: 19% 0;"></div>
-                        <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div>
-                        <div style="padding-top: 8px;">
-                            <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
-                        </div>
-                        <div style="padding: 12.5% 0;"></div>
-                        <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                            <div>
-                                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
-                                <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
-                                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
-                            </div>
-                            <div style="margin-left: 8px;">
-                                <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
-                                <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
-                            </div>
-                            <div style="margin-left: auto;">
-                                <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
-                                <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
-                                <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
-                            </div>
-                        </div>
-                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
-                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
-                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
-                        </div>
-                    </a>
-                    <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DMbEGDVIDih/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Nathan Varghese Ajith (@nathanajith_myp)</a></p>
-                </div>
-            </blockquote>
-        </div>
-    </section>
-
-    <footer class="bg-blue-800 text-white py-6 px-6 md:px-12 mt-16 rounded-t-xl">
+    <footer class="bg-blue-800 text-white py-6 px-6 md:px-12 rounded-t-xl">
         <div class="container mx-auto text-center">
-            <p class="text-sm mt-2">Empowering youth, shaping the future.</p>
+            <p class="text-sm font-semibold">Nathan Ajith MYP — Sunderland</p>
+            <p class="text-xs text-blue-200 mt-2">Empowering youth, shaping the future.</p>
         </div>
     </footer>
 
-    <script async src="//www.instagram.com/embed.js"></script>
-    <script>
-        document.getElementById('toggleInstagram').addEventListener('click', function() {
-            const instagramContent = document.getElementById('instagramContent');
-            instagramContent.classList.toggle('expanded');
-            if (instagramContent.classList.contains('expanded')) {
-                this.textContent = 'Hide Latest Post';
-            } else {
-                this.textContent = 'Show Latest Post';
-            }
-        });
-    </script>
-
 </body>
 </html>
+
