@@ -64,15 +64,26 @@
                     <div class="bg-purple-100 text-purple-700 font-bold text-lg rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mt-1">
                         1
                     </div>
-                    <div class="flex-grow w-full">
+                    <div class="flex-grow w-full overflow-hidden">
                         <h4 class="text-xl font-bold text-gray-900 mb-1">1. Online Form & Information Gathering</h4>
                         <p class="text-gray-600 mb-4">
                             An anonymous online form where young people, youth workers, and families can submit details about local clubs. The form uses strict verification rules to block spam and random text.
                         </p>
                         
-                        <!-- EMBED LOCATION: PASTE YOUR GOOGLE FORM IFRAME BELOW THIS LINE -->
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5ZU-n1CGLoU0GEIhQHStK-zumgl5o31MnZ-NZgWNrah7f2w/viewform?embedded=true" width="640" height="1718" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                        <!-- EMBED LOCATION END -->
+                        <!-- RESPONSIVE EMBED CONTAINER -->
+                        <div class="w-full mt-4 rounded-xl border border-gray-200 bg-gray-50 overflow-hidden shadow-inner" style="position: relative; max-height: 800px; -webkit-overflow-scrolling: touch; overflow-y: auto;">
+                            <iframe 
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSf5ZU-n1CGLoU0GEIhQHStK-zumgl5o31MnZ-NZgWNrah7f2w/viewform?embedded=true" 
+                                class="w-full"
+                                height="1400"
+                                frameborder="0" 
+                                marginheight="0" 
+                                marginwidth="0"
+                                style="display: block; width: 100%; max-width: 100%;">
+                                Loading…
+                            </iframe>
+                        </div>
+                        <!-- END EMBED CONTAINER -->
                     </div>
                 </div>
 
