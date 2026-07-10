@@ -3,71 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pillar Under Development - Nathan Ajith MYP</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Youth Club Directory Campaign</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        /* Basic clean styling to match your portfolio's theme */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #fdfdfd;
+        }
+        .portfolio-section {
+            margin-top: 20px;
+        }
+        .section-intro {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .portfolio-card {
+            background: #ffffff;
+            border: 1px solid #e1e4e8;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            position: relative;
+        }
+        .card-badge {
+            display: inline-block;
+            background: #e1f5fe;
+            color: #0288d1;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        h2 {
+            color: #111;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        h3 {
+            color: #222;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        .feature-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .feature-list li {
+            margin-bottom: 8px;
+        }
+        .form-embed-container {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #f9f9f9;
+            border: 1px dashed #cccccc;
+        }
+        .form-placeholder {
+            padding: 40px 20px;
+            text-align: center;
+            color: #666;
+        }
+        .form-embed-container iframe {
+            width: 100%;
+            min-height: 600px;
+            border: none;
+            display: block;
+        }
     </style>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800 flex flex-col justify-between">
+<body>
 
-    <!-- Navigation Header -->
-    <header class="bg-white shadow-md py-4 px-6 md:px-12 rounded-b-xl sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-extrabold text-blue-700">MYP Campaign Portal</h1>
-            <a href="../index.html" class="text-md font-semibold text-blue-600 hover:text-blue-800 transition duration-300 flex items-center gap-1">
-                &larr; Back to Portfolio
-            </a>
-        </div>
-    </header>
+    <!-- ========================================== -->
+    <!-- SECTION: YOUTH CLUBS DIRECTORY            -->
+    <!-- ========================================== -->
+    <div class="portfolio-section">
+        <h2>Youth Club Directory Project</h2>
+        <p class="section-intro">
+            A 3-step project to find, organize, and share up-to-date information about youth clubs and activities across Sunderland so young people can easily find safe places to go.
+        </p>
 
-    <!-- Main Placeholder Card -->
-    <main class="container mx-auto py-16 px-6 flex-grow flex items-center justify-center max-w-2xl">
-        <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl text-center border border-gray-100 w-full">
-            
-            <!-- Construction Animated SVG Icon -->
-            <div class="inline-flex p-5 bg-amber-50 text-amber-600 rounded-2xl mb-6 border border-amber-100 animate-bounce">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-construction"><rect x="2" y="6" width="20" height="8" rx="1"/><path d="M17 14v7"/><path d="M7 14v7"/><path d="M12 14v7"/><path d="M5 2v4"/><path d="M19 2v4"/></svg>
-            </div>
-            
-            <!-- Heading -->
-            <h2 class="text-3xl font-extrabold text-gray-950 mb-4">Pillar Strategy Under Construction</h2>
-            
-            <!-- Description -->
-            <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
-                I am actively writing the comprehensive action plan, scheduling partner meetings, and compiling local resources for this manifesto objective. Full campaign transparency and structural updates are coming very soon.
+        <!-- STEP 1: THE INQUIRY -->
+        <div class="portfolio-card">
+            <div class="card-badge">Step 1</div>
+            <h3>1. Online Form & Information Gathering</h3>
+            <p>
+                An anonymous online form where young people, youth workers, and families can submit details about local clubs. The form uses strict verification rules to block spam and random text.
             </p>
-
-            <!-- Interactive Blueprint Progress Tracker -->
-            <div class="bg-gray-50 p-5 rounded-xl border border-gray-200 text-left mb-8">
-                <div class="flex justify-between items-center mb-2">
-                    <span class="text-xs font-bold text-gray-500 uppercase tracking-wide">Pillar Draft Completion</span>
-                    <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full">Drafting Stage (45%)</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden shadow-inner">
-                    <div class="bg-blue-600 h-3 rounded-full transition-all duration-500 ease-out" style="width: 45%"></div>
-                </div>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="../index.html#manifesto" class="w-full sm:w-auto bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-xl shadow-md transition duration-200">
-                    Explore Other Pillars
-                </a>
-                <a href="../index.html#contact" class="w-full sm:w-auto bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-xl border border-gray-200 transition duration-200">
-                    Suggest an Idea
-                </a>
-            </div>
             
+            <!-- EMBED LOCATION: PASTE YOUR GOOGLE FORM IFRAME BELOW THIS LINE -->
+            <div class="form-embed-container">
+                <!-- 
+                  [INSTRUCTIONS]: 
+                  Go to Google Forms -> Click "Send" -> Select the "< >" icon.
+                  Copy the iframe code and paste it right here, replacing the placeholder div.
+                -->
+                <div class="form-placeholder">
+                    <p>📊 <em>The live Google Form will display here once the page goes live.</em></p>
+                </div>
+            </div>
+            <!-- EMBED LOCATION END -->
         </div>
-    </main>
 
-    <!-- Footer Element -->
-    <footer class="bg-blue-800 text-white py-6 px-6 md:px-12 rounded-t-xl text-center">
-        <p class="text-sm font-semibold">Nathan Ajith MYP — Sunderland</p>
-    </footer>
+        <!-- STEP 2: DATABASE & GLIDE APP -->
+        <div class="portfolio-card">
+            <div class="card-badge">Step 2</div>
+            <h3>2. Sorting the Data & Making the Mobile App</h3>
+            <p>
+                Form responses automatically go into a private Google Sheet. From there, the data is split so private contact information stays hidden, while public details sync directly to a mobile-friendly <strong>Glide App</strong>.
+            </p>
+            <ul class="feature-list">
+                <li><strong>Privacy First:</strong> Personal names and contacts are kept private and are never shown on the website.</li>
+                <li><strong>Easy Searching:</strong> Users can quickly filter clubs by age groups, days of the week, and local postcodes.</li>
+            </ul>
+        </div>
+
+        <!-- STEP 3: REGULAR UPDATES -->
+        <div class="portfolio-card">
+            <div class="card-badge">Step 3</div>
+            <h3>3. Keeping the Directory Up to Date</h3>
+            <p>
+                To keep the directory useful, the database is regularly checked and updated so old or closed clubs are removed and new ones are added.
+            </p>
+            <ul class="feature-list">
+                <li><strong>Information Checks:</strong> Regular reviews to make sure club times, locations, and details stay accurate.</li>
+                <li><strong>Community Powered:</strong> Working closely with local youth providers to keep the list fresh.</li>
+            </ul>
+        </div>
+    </div>
 
 </body>
 </html>
-
